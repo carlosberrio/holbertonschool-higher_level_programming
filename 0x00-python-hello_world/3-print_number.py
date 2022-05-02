@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-n = 98
-string = "Battery street"
-print(f"{n} {string})
+number = 98
+cadena = "Battery street"
+print(f"{number}{cadena})
