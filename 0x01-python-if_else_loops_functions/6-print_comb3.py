@@ -1,4 +1,4 @@
-for k in range(10):
+for k in range(0,10):
     for z in range((k + 1), 10):
         if (k == 8 and z == 9):
             print(f"{k}{z}")
