@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-from ast import Pass
-
-
 def safe_print_list(my_list=[], x=0):
     c = 0
     for idx in range(x):
