@@ -9,7 +9,7 @@
 * How to find edge cases
 
 ## Resources
-* [doctest - Test interactive Python examples (until 26.2.3.7. Warnings included)](https://docs.python.org/3.4/library/doctest.html)
+* [doctest - Test interactive Python examples (until 26.2.3.7. Warnings included)](https://docs.python.org/3.9/library/doctest.html)
 * [doctest - Testing through documentation](https://pymotw.com/3/doctest/)
 * [Unit Tests in Python](https://www.youtube.com/watch?v=1Lfv5tUGsn8)
 * [Testing in Python using doctest module](https://www.geeksforgeeks.org/testing-in-python-using-doctest-module/?ref=gcse)
