@@ -6,14 +6,17 @@ of a rectangle"""
 
 class Rectangle:
     """Defines a Rectangle"""
+
     def __init__(self, width=0, height=0):
         """method that defines a rectangle sides"""
         self.width = width
         self.height = height
+
     @property
     def width(self):
         """method that defines the rectangle width"""
         return self.__width
+
     @width.setter
     def width(self, value):
         """method that defines the rectangle width"""
@@ -22,10 +25,12 @@ class Rectangle:
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
+
     @property
     def height(self):
         """method that defines the rectangle heiht"""
         return self.__height
+
     @height.setter
     def height(self, value):
         """method that defines the rectangle heiht"""
@@ -34,9 +39,11 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+
     def area(self):
         """method that returns the rectangle area"""
         return self.__width * self.__height
+
     def perimeter(self):
         """method that returns the rectangle perimeter"""
         if self.__width == 0 or self.__height == 0:
