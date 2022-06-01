@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Defines a class Rectangle"""
+"""Defines a class Rectangle
+Method to calculate an area and perimeter
+of a rectangle"""
 
 
 class Rectangle:
