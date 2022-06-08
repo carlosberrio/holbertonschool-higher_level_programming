@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-'''look up
-'''
+"""look up
+"""
 
 
 def lookup(obj):
-    '''Return attributes
-    '''
+    """Return attributes
+    """
     return dir(obj)
