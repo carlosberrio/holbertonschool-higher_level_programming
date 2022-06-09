@@ -1,11 +1,8 @@
 #!/usr/bin/python3
-"""Module for write_file method"""
+"""contains json functions import"""
+from json import dumps
 
 
-def write_file(filename="", text=""):
-    """writes a string <text> to a text file (UTF8) <filename>
-    and returns the number of characters written"""
-    with open(filename, 'w', encoding='utf-8') as file:
-        """f.write(string) writes the contents of string to the file,
-        returning the number of characters written"""
-        return file.write(text)
+def to_json_string(my_obj):
+    """Write a function that returns the JSON"""
+    return dumps(my_obj)
