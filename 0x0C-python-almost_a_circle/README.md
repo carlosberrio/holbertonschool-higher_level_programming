@@ -17,6 +17,8 @@
 * [Python CSV](https://www.programiz.com/python-programming/csv)
 * [Writing CSV files in Python](https://www.programiz.com/python-programming/writing-csv-files#:~:text=DictWriter()%20class%20can%20be,file%20from%20a%20Python%20dictionary.&text=Here%2C,written%20in%20the%20CSV%20file)
 * [The Beginner's Guide to Python Turtle](https://realpython.com/beginners-guide-python-turtle/#picking-the-pen-up-and-down)
+* [args/kwargs](https://yasoob.me/2013/08/04/args-and-kwargs-in-python-explained/)
+* [JSON encoder and decoder](https://docs.python.org/3/library/json.html)
 
 ### Author:
 * Carlos Alberto Berrío | [Github](https://github.com/carlosberrio)
