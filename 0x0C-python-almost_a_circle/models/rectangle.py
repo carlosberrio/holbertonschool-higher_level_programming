@@ -94,15 +94,10 @@ class Rectangle(Base):
         """
         ...
         """
-        i = 0
-
-        while i < self.__height:
-            j = 0
-            while j < self.__width:
+        for i in range(self._height):
+            for j in range(self._widht):
                 print('#', end="")
-                j += 1
             print("")
-            i += 1
 
     def __str__(self):
         """
