@@ -90,18 +90,53 @@ class Rectangle(Base):
         """
         return self.__width * self.__height
 
-    def display(self):
-        """
-        ...
-        """
-        for i in range(self._height):
-            for j in range(self._widht):
-                print('#', end="")
-            print("")
 
     def __str__(self):
         """
         ...
         """
-        return str(f"[Rectangle] ({self.id}) {self.__x}" +
+        return str(f"[Rectangle] ({self.id}) {self.__x}/" +
                    f"{self.__y} - {self.__width}/{self.__height}")
+
+
+    def display(self):
+        """display: prints in stdout the Rectangle instance
+        with the character #
+        """
+        for row in range(self.y):
+            print("")
+        for col in range(self.height):
+            for k in range(self.x):
+                print(" ", end="")
+            for j in range(self.width):
+                print("#", end="")
+            print("")
+
+    def update(self, *args, **kwargs):
+        """
+        ...
+        """ 
+        if args is not None and len(args) > 0:
+            if len(args) > 0:
+                self.id = args[0]
+            if len(args) > 1:
+                self.__width = args[1]
+            if len(args) > 2:
+                self.__height = args[2]
+            if len(args) > 3:
+                self.__x = args[3]
+            if len(args) > 4:
+                self.__y = args[4]
+        else:
+            for k, value in kwargs.items():
+                if k == "id":
+                    self.id = value
+                if k == "width":
+                    self.__width = value
+                if k == "height":
+                    self.__height = value
+                if k == "x":
+                    self.__x = value
+                if k == "y":
+                    self.__y = value
+                    
