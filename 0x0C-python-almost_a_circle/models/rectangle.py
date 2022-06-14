@@ -115,6 +115,8 @@ class Rectangle(Base):
         ...
         """
         if args is not None and len(args) > 0:
+            if type(args[0]) is not int and args[0] is not None:
+                raise ValueError
             if len(args) > 0:
                 self.id = args[0]
             if len(args) > 1:
