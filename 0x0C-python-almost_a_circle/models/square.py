@@ -7,6 +7,7 @@
 from curses.textpad import rectangle
 from models.rectangle import Rectangle
 
+
 class Square(Rectangle):
     """
     ...
@@ -35,11 +36,11 @@ class Square(Rectangle):
             raise ValueError("width must be > 0")
         self.__width = value
         self.__height = value
-        
+
     def update(self, *args, **kwargs):
         """
         ...
-        """ 
+        """
         if args is not None and len(args) > 0:
             if len(args) > 0:
                 self.id = args[0]

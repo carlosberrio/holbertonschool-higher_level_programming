@@ -90,14 +90,12 @@ class Rectangle(Base):
         """
         return self.__width * self.__height
 
-
     def __str__(self):
         """
         ...
         """
         return str(f"[Rectangle] ({self.id}) {self.__x}/" +
                    f"{self.__y} - {self.__width}/{self.__height}")
-
 
     def display(self):
         """display: prints in stdout the Rectangle instance
@@ -115,7 +113,7 @@ class Rectangle(Base):
     def update(self, *args, **kwargs):
         """
         ...
-        """ 
+        """
         if args is not None and len(args) > 0:
             if len(args) > 0:
                 self.id = args[0]
@@ -147,4 +145,3 @@ class Rectangle(Base):
         my_dictionary = {"id": self.id, "width": self.__width,
                          "height": self.__height, "x": self.__x, "y": self.__y}
         return my_dictionary
-
