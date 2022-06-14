@@ -4,6 +4,7 @@
 """
 from fileinput import filename
 import json
+from logging import exception
 
 
 class Base:
@@ -40,7 +41,8 @@ class Base:
         if list_objs is None or list_objs == []:
             json_s = "[]"
         else:
-            json_s = cls.to_json_string([element.to_dictionary() for element in list_objs])
+            json_s = cls.to_json_string(
+                [element.to_dictionary() for element in list_objs])
         filename = f"{cls.__name__}.json"
         with open(filename, "w") as file:
             file.write(json_s)
@@ -73,12 +75,12 @@ class Base:
         ...
         """
         filename = cls.__name__ + ".json"
-        l = []
+        n = []
         try:
             with open(filename, 'r') as f:
-                l = cls.from_json_string(f.read())
-            for i, e in enumerate(l):
-                l[i] = cls.create(**l[i])
-        except:
+                n = cls.from_json_string(f.read())
+            for i, e in enumerate(n):
+                n[i] = cls.create(**n[i])
+        except exception:
             pass
-        return l
+        return n
